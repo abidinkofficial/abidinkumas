@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main-welcome {
+    height: 100vh;
+    min-height: 750px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: url(/images/profile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.header {
+    font-size: 96px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2e0cff;
+    background-image: linear-gradient(315deg, #2e0cff 0%, #703fff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+    text-align: center;
+}
+
+.banner-script {
+    padding-top: 25px;
+    padding-bottom: 0px;
+    font-size: 24px;
+    font-family: monospace, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #2e0cff;
+    padding: 15px;
+    margin: 50px 10px;
+    /* background-color: #2e0cff;
+    background-image: linear-gradient(315deg, #2e0cff 0%, #703fff 100%); */
+    border: 4px solid #2e0cff;
+    border-radius: 100%;
+    transition: all .1s;
+}
+
+.social-link:hover {
+    background-color: #2e0cff;
+    color: white;
+    border: none;
+}
+
+#twitter-link:hover {
+    background-color: #1da1f2;
+}
+
+#instagram-link:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#spotify-link:hover {
+    background-color: #1ed760;
+    color: black;
+}
+
+#linkedin-link:hover {
+    background-color: #0a66c2;
+}
+
+#github-link:hover {
+    background-color: #171515;
+}
+
+#steam-link:hover {
+    background: #0b1c42;
+    background: linear-gradient(180deg, #0b1c42 0%, #137eaf 100%);
+}
+
+.nav {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid black;
+    transition: all ease-in .1s;
+}
+
+.nav-link:hover {
+    color: #2e0cff;
+    border-bottom: 3px solid #2e0cff;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-header {
+    margin-right: auto;
+    font-size: 36px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content-text {
+    width: 55%;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.content-image-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-image {
+    width: 80%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.image-text {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main-welcome {
+        min-height: 650px;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    .header {
+        font-size: 48px;
+    }
+    .banner-script {
+        font-size: 18px;
+        height: 67px;
+        margin-bottom: 10px;
+    }
+    .social-links {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        margin: 5px 5px;
+        border-width: 3px;
+    }
+    .nav {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-header {
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-text {
+        font-size: 16px;
+        width: 75%;
+    }
+    .content-image-container {
+        margin-bottom: 50px;
+        width: 75%;
+    }
+}
