@@ -1,0 +1,238 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.home * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-top {
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-top-left {
+  max-width: 250px;
+  width: 100%;
+}
+
+.home-top-right {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.home-profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+.home-header {
+  font-size: 48px;
+  font-weight: bold;
+  background-color: #2e0cff;
+  background-image: linear-gradient(315deg, #2e0cff 0%, #703fff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
+  margin-bottom: 5px;
+}
+
+.banner-script {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #2e0cff;
+  padding: 18px;
+  margin: 10px 5px;
+  /* background-color: #2e0cff;
+  background-image: linear-gradient(315deg, #2e0cff 0%, #703fff 100%); */
+  border: 3px solid #2e0cff;
+  border-radius: 100%;
+  transition: all .1s;
+}
+
+.social-link:hover {
+  background-color: #2e0cff;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+#twitter-link:hover {
+  background-color: #1da1f2;
+}
+
+#instagram-link:hover {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#spotify-link:hover {
+  background-color: #1ed760;
+  color: black;
+}
+
+#linkedin-link:hover {
+  background-color: #0a66c2;
+}
+
+#github-link:hover {
+  background-color: #171515;
+}
+
+#steam-link:hover {
+  background: #0b1c42;
+  background: linear-gradient(180deg, #0b1c42 0%, #137eaf 100%);
+}
+
+.home-links {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid black;
+  transition: all ease-in .1s;
+}
+
+.home-link:hover {
+  color: #2e0cff;
+  border-bottom: 3px solid #2e0cff;
+  text-decoration: none;
+}
+
+.home-bottom-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-content-header {
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 24px;
+  text-align: justify;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.home-content-text {
+  width: 100%;
+  padding-left: 50px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.home-content-image-container {
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-content-image {
+  height: auto;
+  border-radius: 3px;
+}
+
+.home-image-text {
+  width: 80%;
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .home-top {
+    flex-direction: column;
+  }
+  .home-top-right {
+    align-items: center;
+    padding-left: 0px;
+  }
+  .banner-script {
+      height: 67px;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+  .social-links {
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+  .social-link {
+      width: 45px;
+      height: 45px;
+      margin: 5px 5px;
+      border-width: 3px;
+  }
+  .home-links {
+      line-height: 30px;
+      text-align: center;
+  }
+  .home-content {
+      flex-direction: column;
+      align-items: center;
+  }
+  .home-content-header {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .home-content-text {
+      font-size: 16px;
+      width: 75%;
+      padding-left: 0px;
+  }
+  .home-content-image-container {
+      margin-bottom: 50px;
+      width: 75%;
+  }
+}
